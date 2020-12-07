@@ -5,6 +5,8 @@
 "..\outfile\stm32f10x_it.o"
 "..\outfile\system_stm32f10x.o"
 "..\outfile\device.o"
+"..\outfile\draw_api.o"
+"..\outfile\oled.o"
 "..\outfile\core_cm3.o"
 "..\outfile\startup_stm32f10x_md.o"
 "..\outfile\misc.o"

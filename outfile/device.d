@@ -1,4 +1,4 @@
-..\outfile\device.o: ..\srccode\device.c
+..\outfile\device.o: ..\srccode\DEVICE\LED\device.c
 ..\outfile\device.o: ..\srccode\global.h
 ..\outfile\device.o: ..\srccode\stm32f10x.h
 ..\outfile\device.o: ..\others\core_cm3.h
@@ -30,4 +30,4 @@
 ..\outfile\device.o: ..\lib\inc\stm32f10x_wwdg.h
 ..\outfile\device.o: ..\lib\inc\misc.h
 ..\outfile\device.o: ..\wanlix\wanlix.h
-..\outfile\device.o: ..\srccode\device.h
+..\outfile\device.o: ..\srccode\DEVICE\LED\device.h

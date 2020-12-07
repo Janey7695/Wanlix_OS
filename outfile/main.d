@@ -30,4 +30,4 @@
 ..\outfile\main.o: ..\lib\inc\stm32f10x_wwdg.h
 ..\outfile\main.o: ..\lib\inc\misc.h
 ..\outfile\main.o: ..\wanlix\wanlix.h
-..\outfile\main.o: ..\srccode\device.h
+..\outfile\main.o: ..\srccode\DEVICE\LED\device.h

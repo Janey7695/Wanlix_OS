@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_MD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\lib\inc;..\others;..\srccode;..\wanlix</IncludePath>
+              <IncludePath>..\lib\inc;..\others;..\srccode;..\wanlix;..\srccode\DEVICE\LED;..\srccode\DEVICE\OLED</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -422,7 +422,17 @@
             <File>
               <FileName>device.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\srccode\device.c</FilePath>
+              <FilePath>..\srccode\DEVICE\LED\device.c</FilePath>
+            </File>
+            <File>
+              <FileName>draw_api.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\srccode\DEVICE\OLED\draw_api.c</FilePath>
+            </File>
+            <File>
+              <FileName>oled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\srccode\DEVICE\OLED\oled.c</FilePath>
             </File>
           </Files>
         </Group>

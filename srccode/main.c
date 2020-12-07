@@ -1,25 +1,38 @@
 #include "global.h"
 
 
-U32 gauiTask1Stack[TASKSTACK];      /* 任务1的栈 */
-U32 gauiTask2Stack[TASKSTACK];      /* 任务2的栈 */
+U8 Task1Stack[TASKSTACK];      /* 任务1的栈 */
+U8 Task2Stack[TASKSTACK];      /* 任务2的栈 */
+U8 Task3Stack[TASKSTACK];      /* 任务3的栈 */
+
+W_TCB* Task1Tcb;				//任务1的TCB指针
+W_TCB* Task2Tcb;				//任务2的TCB指针
+W_TCB* Task3Tcb;				//任务3的TCB指针
 
 /*********** 任务声明 *************/
 void TEST_TestTask1(void);
 void TEST_TestTask2(void);
-U32* TEST_GetTaskInitSp(U8 ucTask);
-
+void TEST_TestTask3(void);
 
 S32 main(void)
 {				 
 	SystemInit();
-	LED_Init();
+	DEV_Init();
+	#if OS_OLED_EN
+	OLED_ShowString(0,0,"Wanlix_OS",16);
+	OLED_ShowString(0,2,"Task Init...",8);
+	#endif
 	/*****初始化任务的TCB*****/
-	gpstrTask1Tcb=WLX_TaskInit(TEST_TestTask1,TEST_GetTaskInitSp(1));
-	gpstrTask2Tcb=WLX_TaskInit(TEST_TestTask2,TEST_GetTaskInitSp(2));
-	
+	Task1Tcb = WLX_TaskCreate(TEST_TestTask1,Task1Stack,TASKSTACK);
+	Task2Tcb = WLX_TaskCreate(TEST_TestTask2,Task2Stack,TASKSTACK);
+	Task3Tcb = WLX_TaskCreate(TEST_TestTask3,Task3Stack,TASKSTACK);
+	#if OS_OLED_EN
+	OLED_ShowString(0,2,"Task Init OK",8);
+	OLED_ShowString(0,5,"Version:",8);
+	OLED_ShowString(0,6,WLX_GetWanlixVersion(),8);
+	#endif
 	//启动任务，OS启动
-	WLX_TaskStart();
+	WLX_TaskStart(Task1Tcb);
 	
 	return 0;
 }
@@ -28,9 +41,12 @@ void TEST_TestTask1(void)
 {
 	while(1)
 	{
-	GPIO_ResetBits(LED_GPIO,LED_Pin);
-	DEV_DelayMs(1000);
-	WLX_TaskSwitch();
+		GPIO_ResetBits(LED_GPIO,LED_Pin);
+		#if OS_OLED_EN
+		OLED_ShowString(0,3,"Task 1 Run",8);
+		#endif
+		DEV_DelayMs(1000);
+		WLX_TaskSwitch(Task2Tcb);
 	}
 }
 
@@ -38,21 +54,25 @@ void TEST_TestTask2(void)
 {
 	while(1)
 	{
-	GPIO_SetBits(LED_GPIO,LED_Pin);
-	DEV_DelayMs(2000);
-	WLX_TaskSwitch();
+		GPIO_SetBits(LED_GPIO,LED_Pin);
+		#if OS_OLED_EN
+		OLED_ShowString(0,3,"Task 2 Run",8);
+		#endif
+		DEV_DelayMs(2000);
+		WLX_TaskSwitch(Task3Tcb);
+	}
+}
+void TEST_TestTask3(void)
+{
+	while(1)
+	{
+		GPIO_SetBits(LED_GPIO,LED_Pin);
+		#if OS_OLED_EN
+		OLED_ShowString(0,3,"Task 3 Run",8);
+		#endif
+		DEV_DelayMs(3000);
+		WLX_TaskSwitch(Task1Tcb);
 	}
 }
 
-U32* TEST_GetTaskInitSp(U8 ucTask)
-{
-    if(1 == ucTask)
-    {
-        return (gauiTask1Stack + TASKSTACK);//找到数组的末地址（满递减）
-    }
-    else //if(2 == ucTask)
-    {
-        return (gauiTask2Stack + TASKSTACK);
-    }
-}
 

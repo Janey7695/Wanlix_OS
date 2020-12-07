@@ -45,10 +45,10 @@ extern W_TCB* gpstrTask1Tcb;
 extern W_TCB* gpstrTask2Tcb;
 
 /******************* 外部函数声明 *********************/
-extern W_TCB* WLX_TaskInit(VFUNC vfFuncPointer, U32* puiTaskStack);
-extern void WLX_TaskSwitch(void);
-extern void WLX_TaskStart(void);
-
+extern W_TCB* WLX_TaskCreate(VFUNC vfuncPointer,U8* pucTaskStack,U32 uiStackSize);
+extern void WLX_TaskSwitch(W_TCB* pstrTcb);
+extern void WLX_TaskStart(W_TCB* pstrTcb);
+extern U8* WLX_GetWanlixVersion(void);
 #endif
 
 
