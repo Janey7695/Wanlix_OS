@@ -8,10 +8,6 @@
 
 extern U32 guiCurTask;
 
-//extern W_TCB* gpstrTask1Tcb;                   /* 任务1的TCB指针 */
-//extern W_TCB* gpstrTask2Tcb;                   /* 任务2的TCB指针 */
-
-
 extern void WLX_SwitchToTask(STACKREG* pstrNextTaskStackRegAddr);
 extern void WLX_ContextSwitch(STACKREG* pstrCurTaskStackRegAddr,
                               STACKREG* pstrNextTaskStackRegAddr);

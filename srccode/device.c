@@ -1,5 +1,6 @@
 #include "global.h"
 
+//初始化GPIO
 void LED_Init(void)
 {
 	GPIO_InitTypeDef GPIOInitStruct;
@@ -12,7 +13,7 @@ void LED_Init(void)
 	GPIO_SetBits(LED_GPIO,LED_Pin);
 }
 
-
+//软件延时函数
 void DEV_DelayMs(U32 uiMs)
 {
     U32 i;

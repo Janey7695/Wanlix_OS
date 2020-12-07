@@ -29,9 +29,10 @@ W_TCB* WLX_TaskInit(VFUNC vfuncPointer,U32* puiTaskStack)
 	pstrStackReg->uiR10 = 0;
 	pstrStackReg->uiR11 = 0;
 	pstrStackReg->uiR12 = 0;
-	pstrStackReg->uiR13 = (U32)pstrTcb;
-	pstrStackReg->uiR14 = (U32)vfuncPointer;
-	pstrStackReg->uiXpsr = MODE_USR;
+	pstrStackReg->uiR13 = (U32)pstrTcb;			//SP指针
+	pstrStackReg->uiR14 = (U32)vfuncPointer;	//LR指针
+	//还有R15寄存器，但是不需要自己初始化，R15是 PC指针 指向下一条指向的命令
+	pstrStackReg->uiXpsr = MODE_USR;			//XPSR状态寄存器
 	
 	return pstrTcb;
 	

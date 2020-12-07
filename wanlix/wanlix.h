@@ -2,7 +2,7 @@
 #define _WANLIX_H
 
 /* 定义变量类型 */
-typedef unsigned char       U8;     /* 本编译器char型为无符号型 */
+typedef unsigned char       U8;
 typedef unsigned short      U16;
 typedef unsigned int        U32;
 typedef signed char         S8;
@@ -40,10 +40,11 @@ typedef struct w_tcb
 	STACKREG strStackReg;//备份寄存器组
 }W_TCB;
 
+/****************** 外部变量声明 *********************/
 extern W_TCB* gpstrTask1Tcb;
 extern W_TCB* gpstrTask2Tcb;
 
-
+/******************* 外部函数声明 *********************/
 extern W_TCB* WLX_TaskInit(VFUNC vfFuncPointer, U32* puiTaskStack);
 extern void WLX_TaskSwitch(void);
 extern void WLX_TaskStart(void);
