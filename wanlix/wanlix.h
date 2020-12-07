@@ -40,6 +40,9 @@ typedef struct w_tcb
 	STACKREG strStackReg;//±¸·Ý¼Ä´æÆ÷×é
 }W_TCB;
 
+extern W_TCB* gpstrTask1Tcb;
+extern W_TCB* gpstrTask2Tcb;
+
 
 extern W_TCB* WLX_TaskInit(VFUNC vfFuncPointer, U32* puiTaskStack);
 extern void WLX_TaskSwitch(void);

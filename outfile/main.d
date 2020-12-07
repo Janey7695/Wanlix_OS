@@ -1,4 +1,5 @@
 ..\outfile\main.o: ..\srccode\main.c
+..\outfile\main.o: ..\srccode\global.h
 ..\outfile\main.o: ..\srccode\stm32f10x.h
 ..\outfile\main.o: ..\others\core_cm3.h
 ..\outfile\main.o: D:\Keil_5\ARM\ARMCC\Bin\..\include\stdint.h
@@ -28,3 +29,5 @@
 ..\outfile\main.o: ..\lib\inc\stm32f10x_usart.h
 ..\outfile\main.o: ..\lib\inc\stm32f10x_wwdg.h
 ..\outfile\main.o: ..\lib\inc\misc.h
+..\outfile\main.o: ..\wanlix\wanlix.h
+..\outfile\main.o: ..\srccode\device.h

@@ -1,12 +1,13 @@
 Dependencies for Project 'Wanlix_OS', Target 'Wanlix_OS': (DO NOT MODIFY !)
-F (..\wanlix\wanlix.h)(0x5FCBA10C)()
-F (..\wanlix\wlx_core_a.asm)(0x5FCBA00D)(--cpu Cortex-M3 -g --apcs=interwork -ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 521" --pd "STM32F10X_MD SETA 1"--list .\listings\wlx_core_a.lst --xref -o ..\outfile\wlx_core_a.o --depend ..\outfile\wlx_core_a.d)
+F (..\wanlix\wanlix.h)(0x5FCD98CB)()
+F (..\wanlix\wlx_core_a.asm)(0x5FCD9E4A)(--cpu Cortex-M3 -g --apcs=interwork -ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 521" --pd "STM32F10X_MD SETA 1"--list .\listings\wlx_core_a.lst --xref -o ..\outfile\wlx_core_a.o --depend ..\outfile\wlx_core_a.d)
 I (..\wanlix\wlx_core_a.h)(0x5FCBA00D)
 F (..\wanlix\wlx_core_c.c)(0x5FCBA0A5)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\wlx_core_c.o --omf_browse ..\outfile\wlx_core_c.crf --depend ..\outfile\wlx_core_c.d)
-I (..\wanlix\wlx_core_c.h)(0x5FCBA109)
-I (..\wanlix\wanlix.h)(0x5FCBA10C)
-F (..\srccode\global.h)(0x5FCBA21C)()
-F (..\srccode\main.c)(0x5FCBA220)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\main.o --omf_browse ..\outfile\main.crf --depend ..\outfile\main.d)
+I (..\wanlix\wlx_core_c.h)(0x5FCD98EF)
+I (..\wanlix\wanlix.h)(0x5FCD98CB)
+F (..\srccode\global.h)(0x5FCDA14A)()
+F (..\srccode\main.c)(0x5FCDA111)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\main.o --omf_browse ..\outfile\main.crf --depend ..\outfile\main.d)
+I (..\srccode\global.h)(0x5FCDA14A)
 I (..\srccode\stm32f10x.h)(0x4D783CB4)
 I (..\others\core_cm3.h)(0x4D523B58)
 I (D:\Keil_5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
@@ -35,6 +36,8 @@ I (..\lib\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\lib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\lib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\lib\inc\misc.h)(0x4D783BB4)
+I (..\wanlix\wanlix.h)(0x5FCD98CB)
+I (..\srccode\device.h)(0x5FCDA014)
 F (..\srccode\stm32f10x_it.c)(0x4D99A59E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\stm32f10x_it.o --omf_browse ..\outfile\stm32f10x_it.crf --depend ..\outfile\stm32f10x_it.d)
 I (..\srccode\stm32f10x_it.h)(0x4D99A59E)
 I (..\srccode\stm32f10x.h)(0x4D783CB4)
@@ -94,9 +97,41 @@ I (..\lib\inc\stm32f10x_tim.h)(0x4D783BB4)
 I (..\lib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\lib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\lib\inc\misc.h)(0x4D783BB4)
+F (..\srccode\device.c)(0x5FCD9B59)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\device.o --omf_browse ..\outfile\device.crf --depend ..\outfile\device.d)
+I (..\srccode\global.h)(0x5FCDA14A)
+I (..\srccode\stm32f10x.h)(0x4D783CB4)
+I (..\others\core_cm3.h)(0x4D523B58)
+I (D:\Keil_5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
+I (..\srccode\system_stm32f10x.h)(0x4D783CAA)
+I (..\srccode\stm32f10x_conf.h)(0x4D99A59E)
+I (..\lib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_bkp.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_can.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_cec.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_crc.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_dac.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_dbgmcu.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_dma.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_exti.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_flash.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_fsmc.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_iwdg.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_pwr.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_rtc.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_sdio.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_spi.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (..\lib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
+I (..\lib\inc\misc.h)(0x4D783BB4)
+I (..\wanlix\wanlix.h)(0x5FCD98CB)
+I (..\srccode\device.h)(0x5FCDA014)
 F (..\others\core_cm3.c)(0x4C0C587E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\core_cm3.o --omf_browse ..\outfile\core_cm3.crf --depend ..\outfile\core_cm3.d)
 I (D:\Keil_5\ARM\ARMCC\include\stdint.h)(0x574E3E26)
-F (..\others\startup_stm32f10x_md.s)(0x4D783CD2)(--cpu Cortex-M3 -g --apcs=interwork -ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 521" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o ..\outfile\startup_stm32f10x_md.o --depend ..\outfile\startup_stm32f10x_md.d)
+F (..\others\startup_stm32f10x_md.s)(0x5FCD9D21)(--cpu Cortex-M3 -g --apcs=interwork -ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 521" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o ..\outfile\startup_stm32f10x_md.o --depend ..\outfile\startup_stm32f10x_md.d)
 F (..\lib\src\misc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\misc.o --omf_browse ..\outfile\misc.crf --depend ..\outfile\misc.d)
 I (..\lib\inc\misc.h)(0x4D783BB4)
 I (..\srccode\stm32f10x.h)(0x4D783CB4)
