@@ -4,7 +4,7 @@
 #include "stm32f10x.h"
 
 /* 外设功能设置 */
-#define OS_OLED_EN				0
+#define OS_OLED_EN				1
 
 
 

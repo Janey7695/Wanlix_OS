@@ -176,9 +176,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>20</LineNumber>
+          <LineNumber>47</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134219354</Address>
+          <Address>134219966</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -187,7 +187,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>D:\IoT_Engineering_19\瀛︿笟鏂囨。\璇惧瀛︿範\STM32\Wanlix_OS\srccode\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\Wanlix_OS\../srccode/main.c\20</Expression>
+          <Expression>\\Wanlix_OS\../srccode/main.c\47</Expression>
         </Bp>
       </Breakpoint>
       <Tracepoint>
@@ -372,7 +372,7 @@
 
   <Group>
     <GroupName>others</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

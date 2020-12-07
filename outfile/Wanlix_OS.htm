@@ -3,18 +3,18 @@
 <title>Static Call Graph - [..\outfile\Wanlix_OS.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\outfile\Wanlix_OS.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Mon Dec 07 20:55:32 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060300: Last Updated: Mon Dec 07 21:49:18 2020
 <BR><P>
-<H3>Maximum Stack Usage =         56 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =         88 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-__rt_entry_main &rArr; main &rArr; WLX_TaskCreate &rArr; WLX_TaskTcbInit
+__rt_entry_main &rArr; main &rArr; OLED_ShowString &rArr; OLED_ShowChar &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte
 <P>
 <H3>
 Functions with no stack information
 </H3><UL>
  <LI><a href="#[4e]">__user_initial_stackheap</a>
- <LI><a href="#[5d]">WLX_ContextSwitch</a>
- <LI><a href="#[5c]">WLX_SwitchToTask</a>
+ <LI><a href="#[64]">WLX_ContextSwitch</a>
+ <LI><a href="#[63]">WLX_SwitchToTask</a>
 </UL>
 </UL>
 <P>
@@ -102,9 +102,9 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[5f]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[67]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[60]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[68]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
 <P><STRONG><a name="[41]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
@@ -112,78 +112,78 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
 </UL>
 
-<P><STRONG><a name="[61]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+<P><STRONG><a name="[69]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
 <P><STRONG><a name="[45]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
 </UL>
 
-<P><STRONG><a name="[62]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+<P><STRONG><a name="[6a]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
 
-<P><STRONG><a name="[63]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+<P><STRONG><a name="[6b]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
 
-<P><STRONG><a name="[64]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+<P><STRONG><a name="[6c]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
 
-<P><STRONG><a name="[65]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+<P><STRONG><a name="[6d]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
 
-<P><STRONG><a name="[66]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+<P><STRONG><a name="[6e]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
 
-<P><STRONG><a name="[67]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+<P><STRONG><a name="[6f]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
 
-<P><STRONG><a name="[68]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+<P><STRONG><a name="[70]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
 
-<P><STRONG><a name="[69]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+<P><STRONG><a name="[71]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
 
-<P><STRONG><a name="[6a]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+<P><STRONG><a name="[72]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
 
-<P><STRONG><a name="[6b]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+<P><STRONG><a name="[73]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
 
-<P><STRONG><a name="[6c]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+<P><STRONG><a name="[74]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
 
-<P><STRONG><a name="[6d]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+<P><STRONG><a name="[75]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
 
-<P><STRONG><a name="[6e]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+<P><STRONG><a name="[76]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
 
-<P><STRONG><a name="[6f]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+<P><STRONG><a name="[77]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
 
-<P><STRONG><a name="[70]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+<P><STRONG><a name="[78]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
 
-<P><STRONG><a name="[71]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+<P><STRONG><a name="[79]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
 
-<P><STRONG><a name="[72]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+<P><STRONG><a name="[7a]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
 
-<P><STRONG><a name="[73]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+<P><STRONG><a name="[7b]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
 
-<P><STRONG><a name="[74]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+<P><STRONG><a name="[7c]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
 
-<P><STRONG><a name="[75]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+<P><STRONG><a name="[7d]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
 
-<P><STRONG><a name="[76]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+<P><STRONG><a name="[7e]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
 
 <P><STRONG><a name="[4a]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
 </UL>
 
-<P><STRONG><a name="[77]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+<P><STRONG><a name="[7f]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
 
-<P><STRONG><a name="[78]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+<P><STRONG><a name="[80]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
 
-<P><STRONG><a name="[79]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+<P><STRONG><a name="[81]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
 
-<P><STRONG><a name="[7a]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+<P><STRONG><a name="[82]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
 
-<P><STRONG><a name="[7b]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+<P><STRONG><a name="[83]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
 
-<P><STRONG><a name="[7c]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+<P><STRONG><a name="[84]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
 
-<P><STRONG><a name="[7d]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+<P><STRONG><a name="[85]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
 <P><STRONG><a name="[3f]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 </UL>
 
-<P><STRONG><a name="[7e]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[86]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
 
 <P><STRONG><a name="[42]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -196,17 +196,17 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[7f]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[87]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[46]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56 + Unknown Stack Size
-<LI>Call Chain = __rt_entry_main &rArr; main &rArr; WLX_TaskCreate &rArr; WLX_TaskTcbInit
+<BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; OLED_ShowString &rArr; OLED_ShowChar &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[80]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+<P><STRONG><a name="[88]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
 <P><STRONG><a name="[4f]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -216,7 +216,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[81]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+<P><STRONG><a name="[89]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
 
 <P><STRONG><a name="[4b]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
@@ -362,19 +362,19 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[82]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[8a]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[83]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[8b]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[84]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[8c]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[85]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[8d]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[4d]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[86]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[8e]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[43]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -399,33 +399,35 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
 </UL>
 
-<P><STRONG><a name="[87]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[8f]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[88]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[90]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[89]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+<P><STRONG><a name="[91]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[5d]"></a>WLX_ContextSwitch</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, wlx_core_a.o(WLX_CORE_A))
-<BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskSwitch
+<P><STRONG><a name="[64]"></a>WLX_ContextSwitch</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, wlx_core_a.o(WLX_CORE_A))
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskSwitch
 </UL>
 
-<P><STRONG><a name="[5c]"></a>WLX_SwitchToTask</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, wlx_core_a.o(WLX_CORE_A))
-<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskStart
+<P><STRONG><a name="[63]"></a>WLX_SwitchToTask</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, wlx_core_a.o(WLX_CORE_A))
+<BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskStart
 </UL>
 
 <P><STRONG><a name="[7]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.BusFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
-<P><STRONG><a name="[57]"></a>DEV_DelayMs</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, device.o(i.DEV_DelayMs))
+<P><STRONG><a name="[5e]"></a>DEV_DelayMs</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, device.o(i.DEV_DelayMs))
 <BR><BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask3
 <LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask2
 <LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask1
 </UL>
 
-<P><STRONG><a name="[50]"></a>DEV_Init</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, device.o(i.DEV_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DEV_Init &rArr; GPIO_Init
+<P><STRONG><a name="[50]"></a>DEV_Init</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, device.o(i.DEV_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = DEV_Init &rArr; OLED_Init &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Clear
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 <LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 </UL>
@@ -435,19 +437,28 @@ Global Symbols
 <P><STRONG><a name="[a]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
+<P><STRONG><a name="[57]"></a>DelayMs</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, oled.o(i.DelayMs))
+<BR><BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+</UL>
+
 <P><STRONG><a name="[52]"></a>GPIO_Init</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, stm32f10x_gpio.o(i.GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_Init
+<BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_Init
 </UL>
 
-<P><STRONG><a name="[56]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ResetBits))
-<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask1
+<P><STRONG><a name="[58]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ResetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask3
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask1
 </UL>
 
 <P><STRONG><a name="[53]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_SetBits))
-<BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_Init
-<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask3
+<BR><BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_Init
 <LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask2
 </UL>
 
@@ -460,11 +471,77 @@ Global Symbols
 <P><STRONG><a name="[4]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.NMI_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
+<P><STRONG><a name="[55]"></a>OLED_Clear</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, oled.o(i.OLED_Clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = OLED_Clear &rArr; OLED_WR_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_Init
+</UL>
+
+<P><STRONG><a name="[54]"></a>OLED_Init</STRONG> (Thumb, 368 bytes, Stack size 8 bytes, oled.o(i.OLED_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = OLED_Init &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayMs
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Clear
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_Init
+</UL>
+
+<P><STRONG><a name="[59]"></a>OLED_Set_Pos</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, oled.o(i.OLED_Set_Pos))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = OLED_Set_Pos &rArr; OLED_WR_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowChar
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+</UL>
+
+<P><STRONG><a name="[5a]"></a>OLED_ShowChar</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, oled.o(i.OLED_ShowChar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = OLED_ShowChar &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_WR_Byte
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowString
+</UL>
+
+<P><STRONG><a name="[5b]"></a>OLED_ShowString</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, oled.o(i.OLED_ShowString))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = OLED_ShowString &rArr; OLED_ShowChar &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask3
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask2
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask1
+</UL>
+
+<P><STRONG><a name="[56]"></a>OLED_WR_Byte</STRONG> (Thumb, 108 bytes, Stack size 16 bytes, oled.o(i.OLED_WR_Byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = OLED_WR_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowChar
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Set_Pos
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Clear
+</UL>
+
 <P><STRONG><a name="[b]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
 <P><STRONG><a name="[51]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_Init
+<BR><BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_Init
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_Init
 </UL>
 
 <P><STRONG><a name="[9]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SVC_Handler))
@@ -476,81 +553,90 @@ Global Symbols
 <P><STRONG><a name="[38]"></a>SystemInit</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, system_stm32f10x.o(i.SystemInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = SystemInit &rArr; SetSysClock &rArr; SetSysClockTo72
 </UL>
-<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
 </UL>
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(.text)
 </UL>
-<P><STRONG><a name="[3a]"></a>TEST_TestTask1</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, main.o(i.TEST_TestTask1))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
-<LI>Call Chain = TEST_TestTask1 &rArr; WLX_TaskSwitch
+<P><STRONG><a name="[3a]"></a>TEST_TestTask1</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, main.o(i.TEST_TestTask1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
+<LI>Call Chain = TEST_TestTask1 &rArr; OLED_ShowString &rArr; OLED_ShowChar &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_DelayMs
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskSwitch
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
-</UL>
-<P><STRONG><a name="[3b]"></a>TEST_TestTask2</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, main.o(i.TEST_TestTask2))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
-<LI>Call Chain = TEST_TestTask2 &rArr; WLX_TaskSwitch
-</UL>
-<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_DelayMs
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskSwitch
+<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowString
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_DelayMs
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskSwitch
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
 </UL>
-<P><STRONG><a name="[3c]"></a>TEST_TestTask3</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, main.o(i.TEST_TestTask3))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
-<LI>Call Chain = TEST_TestTask3 &rArr; WLX_TaskSwitch
+<P><STRONG><a name="[3b]"></a>TEST_TestTask2</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, main.o(i.TEST_TestTask2))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
+<LI>Call Chain = TEST_TestTask2 &rArr; OLED_ShowString &rArr; OLED_ShowChar &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_DelayMs
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskSwitch
+<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowString
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_DelayMs
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskSwitch
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
+</UL>
+<P><STRONG><a name="[3c]"></a>TEST_TestTask3</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, main.o(i.TEST_TestTask3))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80 + Unknown Stack Size
+<LI>Call Chain = TEST_TestTask3 &rArr; OLED_ShowString &rArr; OLED_ShowChar &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowString
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_DelayMs
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskSwitch
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.main)
 </UL>
 <P><STRONG><a name="[8]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.UsageFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
-<P><STRONG><a name="[59]"></a>WLX_TaskCreate</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, wlx_core_c.o(i.WLX_TaskCreate))
+<P><STRONG><a name="[66]"></a>WLX_GetWanlixVersion</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, wlx_core_c.o(i.WLX_GetWanlixVersion))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[60]"></a>WLX_TaskCreate</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, wlx_core_c.o(i.WLX_TaskCreate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = WLX_TaskCreate &rArr; WLX_TaskTcbInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskTcbInit
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskTcbInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[5b]"></a>WLX_TaskStart</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, wlx_core_c.o(i.WLX_TaskStart))
+<P><STRONG><a name="[62]"></a>WLX_TaskStart</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, wlx_core_c.o(i.WLX_TaskStart))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
 <LI>Call Chain = WLX_TaskStart
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_SwitchToTask
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_SwitchToTask
 </UL>
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[58]"></a>WLX_TaskSwitch</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, wlx_core_c.o(i.WLX_TaskSwitch))
+<P><STRONG><a name="[5f]"></a>WLX_TaskSwitch</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, wlx_core_c.o(i.WLX_TaskSwitch))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
 <LI>Call Chain = WLX_TaskSwitch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_ContextSwitch
+<BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_ContextSwitch
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask3
 <LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask2
 <LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TEST_TestTask1
 </UL>
 
-<P><STRONG><a name="[47]"></a>main</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56 + Unknown Stack Size
-<LI>Call Chain = main &rArr; WLX_TaskCreate &rArr; WLX_TaskTcbInit
+<P><STRONG><a name="[47]"></a>main</STRONG> (Thumb, 148 bytes, Stack size 8 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
+<LI>Call Chain = main &rArr; OLED_ShowString &rArr; OLED_ShowChar &rArr; OLED_Set_Pos &rArr; OLED_WR_Byte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLED_ShowString
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DEV_Init
-<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskStart
-<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskCreate
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskStart
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskCreate
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_GetWanlixVersion
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
@@ -558,30 +644,30 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[5e]"></a>WLX_TaskStackInit</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, wlx_core_c.o(i.WLX_TaskStackInit))
-<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskTcbInit
+<P><STRONG><a name="[65]"></a>WLX_TaskStackInit</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, wlx_core_c.o(i.WLX_TaskStackInit))
+<BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskTcbInit
 </UL>
 
-<P><STRONG><a name="[5a]"></a>WLX_TaskTcbInit</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, wlx_core_c.o(i.WLX_TaskTcbInit))
+<P><STRONG><a name="[61]"></a>WLX_TaskTcbInit</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, wlx_core_c.o(i.WLX_TaskTcbInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = WLX_TaskTcbInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskStackInit
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskStackInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskCreate
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WLX_TaskCreate
 </UL>
 
-<P><STRONG><a name="[54]"></a>SetSysClock</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_stm32f10x.o(i.SetSysClock))
+<P><STRONG><a name="[5c]"></a>SetSysClock</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_stm32f10x.o(i.SetSysClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SetSysClock &rArr; SetSysClockTo72
 </UL>
-<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClockTo72
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClockTo72
 </UL>
 <BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[55]"></a>SetSysClockTo72</STRONG> (Thumb, 214 bytes, Stack size 12 bytes, system_stm32f10x.o(i.SetSysClockTo72))
+<P><STRONG><a name="[5d]"></a>SetSysClockTo72</STRONG> (Thumb, 214 bytes, Stack size 12 bytes, system_stm32f10x.o(i.SetSysClockTo72))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SetSysClockTo72
 </UL>
-<BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
 </UL>
 <P>
 <H3>

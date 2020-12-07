@@ -30,6 +30,7 @@ S32 main(void)
 	OLED_ShowString(0,2,"Task Init OK",8);
 	OLED_ShowString(0,5,"Version:",8);
 	OLED_ShowString(0,6,WLX_GetWanlixVersion(),8);
+	OLED_ShowString(0,3,"Task 1 Run",8);
 	#endif
 	//启动任务，OS启动
 	WLX_TaskStart(Task1Tcb);
@@ -46,6 +47,7 @@ void TEST_TestTask1(void)
 		OLED_ShowString(0,3,"Task 1 Run",8);
 		#endif
 		DEV_DelayMs(1000);
+		
 		WLX_TaskSwitch(Task2Tcb);
 	}
 }
@@ -66,7 +68,7 @@ void TEST_TestTask3(void)
 {
 	while(1)
 	{
-		GPIO_SetBits(LED_GPIO,LED_Pin);
+		GPIO_ResetBits(LED_GPIO,LED_Pin);
 		#if OS_OLED_EN
 		OLED_ShowString(0,3,"Task 3 Run",8);
 		#endif

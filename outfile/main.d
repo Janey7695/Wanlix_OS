@@ -31,3 +31,6 @@
 ..\outfile\main.o: ..\lib\inc\misc.h
 ..\outfile\main.o: ..\wanlix\wanlix.h
 ..\outfile\main.o: ..\srccode\DEVICE\LED\device.h
+..\outfile\main.o: ..\srccode\DEVICE\OLED\oled.h
+..\outfile\main.o: D:\Keil_5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\outfile\main.o: ..\srccode\DEVICE\OLED\draw_api.h
