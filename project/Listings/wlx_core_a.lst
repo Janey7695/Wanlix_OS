@@ -87,8 +87,8 @@ Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=..\outfile\wlx_core_a.d -o..\outfile\wlx_core_a.o -ID:\IoT_Enginee
 ring_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE -ID:\Keil_5\ARM\PACK\Keil
 \STM32F1xx_DFP\2.2.0\Device\Include -ID:\Keil_5\ARM\CMSIS\Include --predefine="
-__UVISION_VERSION SETA 521" --predefine="STM32F10X_MD SETA 1" --list=.\listings
-\wlx_core_a.lst ..\wanlix\wlx_core_a.asm
+__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 521" --predefine="STM32F
+10X_MD SETA 1" --list=.\listings\wlx_core_a.lst ..\wanlix\wlx_core_a.asm
 
 
 
@@ -120,4 +120,4 @@ Symbol: WLX_SwitchToTask
       At line 4 in file ..\wanlix\wlx_core_a.h
 Comment: WLX_SwitchToTask used once
 3 symbols
-335 symbols in table
+336 symbols in table

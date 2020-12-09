@@ -5,7 +5,7 @@
 #include "wanlix.h"
 #include "device.h"
 
-#define SOFTWARE_VER			"001.003.001.001"  /*系统版本号 {Major}.{Minor}.{Revision}.{Build}*/
+#define SOFTWARE_VER			"001.003.001.005"  /*系统版本号 {Major}.{Minor}.{Revision}.{Build}*/
 /********
 Major:主版本号，当操作系统功能或结构发生重大改变时才修改，如添加重要功能或整体架构重构
 Minor:子版本号，基于原有功能、结构增加、修改一些功能时修改此版本号

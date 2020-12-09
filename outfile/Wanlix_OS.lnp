@@ -33,7 +33,7 @@
 "..\outfile\stm32f10x_tim.o"
 "..\outfile\stm32f10x_usart.o"
 "..\outfile\stm32f10x_wwdg.o"
---strict --scatter "..\outfile\Wanlix_OS.sct"
+--library_type=microlib --strict --scatter "..\outfile\Wanlix_OS.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\Wanlix_OS.map" -o ..\outfile\Wanlix_OS.axf

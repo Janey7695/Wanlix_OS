@@ -21,9 +21,13 @@ void _sys_exit(int x)
 //这里使用串口1(USART1)输出printf信息
 int fputc(int ch, FILE *f)
 {      
-	while((USART1->SR&0X40)==0);//等待上一次串口数据发送完成  
-	USART1->DR = (u8) ch;      	//写DR,串口1将发送数据
-	return ch;
+	USART_SendData(USART1, (unsigned char) ch);
+
+  /* Loop until the end of transmission */
+  while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET)
+  {}
+
+  return ch;
 }
 
 
@@ -31,8 +35,8 @@ void Usart_Init(unsigned int baudRate)
 {
 	GPIO_InitTypeDef  GPIO_InitStructure;
 	USART_InitTypeDef USART_InitStructure;
-	
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1|RCC_APB2Periph_GPIOA,ENABLE);
+	 
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1|RCC_APB2Periph_GPIOA|RCC_APB2Periph_AFIO,ENABLE);
 	GPIO_InitStructure.GPIO_Pin=TxD_Pin;
 	GPIO_InitStructure.GPIO_Mode=GPIO_Mode_AF_PP;
 	GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;
@@ -50,7 +54,7 @@ void Usart_Init(unsigned int baudRate)
 	USART_InitStructure.USART_Mode=USART_Mode_Rx|USART_Mode_Tx;
 	
 	USART_Init(USART1,&USART_InitStructure);
-	
+	USART_Cmd(USART1,ENABLE);
 	
 }
 
