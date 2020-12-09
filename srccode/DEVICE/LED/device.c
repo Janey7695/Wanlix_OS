@@ -1,5 +1,5 @@
 #include "global.h"
-//初始化GPIO
+//初始化设备
 void DEV_Init(void)
 {
 	GPIO_InitTypeDef GPIOInitStruct;
@@ -9,9 +9,14 @@ void DEV_Init(void)
 	GPIOInitStruct.GPIO_Speed=GPIO_Speed_50MHz;
 	GPIO_Init(LED_GPIO,&GPIOInitStruct);
 	GPIO_SetBits(LED_GPIO,LED_Pin);
+	
 	#if OS_OLED_EN
 	OLED_Init();
 	OLED_Clear();
+	#endif
+	
+	#if OS_USART_EN
+	Usart_Init(115200);
 	#endif
 }
 

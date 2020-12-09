@@ -5,12 +5,17 @@
 
 /* 外设功能设置 */
 #define OS_OLED_EN				1
-
+#define OS_USART_EN				1
 
 
 #if OS_OLED_EN
 #include "oled.h"
 #include "draw_api.h"
+#endif
+
+#if OS_USART_EN
+#include "usart.h"
+
 #endif
 
 

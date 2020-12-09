@@ -34,3 +34,5 @@
 ..\outfile\main.o: ..\srccode\DEVICE\OLED\oled.h
 ..\outfile\main.o: D:\Keil_5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\outfile\main.o: ..\srccode\DEVICE\OLED\draw_api.h
+..\outfile\main.o: ..\srccode\DEVICE\USART\usart.h
+..\outfile\main.o: D:\Keil_5\ARM\ARMCC\Bin\..\include\stdio.h

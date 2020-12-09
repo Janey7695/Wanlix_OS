@@ -22,6 +22,14 @@ S32 main(void)
 	OLED_ShowString(0,0,"Wanlix_OS",16);
 	OLED_ShowString(0,2,"Task Init...",8);
 	#endif
+	
+	#if OS_USART_EN
+	printf("************ Wanlix OS ************/r/n");
+	printf("*    Version:");
+	printf("%s",WLX_GetWanlixVersion());
+	printf("           */r/n");
+	printf("*---------------------------------*/r/n");
+	#endif
 	/*****初始化任务的TCB*****/
 	Task1Tcb = WLX_TaskCreate(TEST_TestTask1,Task1Stack,TASKSTACK);
 	Task2Tcb = WLX_TaskCreate(TEST_TestTask2,Task2Stack,TASKSTACK);
@@ -31,6 +39,9 @@ S32 main(void)
 	OLED_ShowString(0,5,"Version:",8);
 	OLED_ShowString(0,6,WLX_GetWanlixVersion(),8);
 	OLED_ShowString(0,3,"Task 1 Run",8);
+	#endif
+	#if OS_USART_EN
+	printf(">> OS Run/r/n");
 	#endif
 	//启动任务，OS启动
 	WLX_TaskStart(Task1Tcb);
@@ -46,6 +57,9 @@ void TEST_TestTask1(void)
 		#if OS_OLED_EN
 		OLED_ShowString(0,3,"Task 1 Run",8);
 		#endif
+		#if OS_USART_EN
+		printf(">> TASK 1 Running/r/n");
+		#endif
 		DEV_DelayMs(1000);
 		
 		WLX_TaskSwitch(Task2Tcb);
@@ -60,6 +74,9 @@ void TEST_TestTask2(void)
 		#if OS_OLED_EN
 		OLED_ShowString(0,3,"Task 2 Run",8);
 		#endif
+		#if OS_USART_EN
+		printf(">> TASK 2 Running/r/n");
+		#endif
 		DEV_DelayMs(2000);
 		WLX_TaskSwitch(Task3Tcb);
 	}
@@ -71,6 +88,9 @@ void TEST_TestTask3(void)
 		GPIO_ResetBits(LED_GPIO,LED_Pin);
 		#if OS_OLED_EN
 		OLED_ShowString(0,3,"Task 3 Run",8);
+		#endif
+		#if OS_USART_EN
+		printf(">> TASK 3 Running/r/n");
 		#endif
 		DEV_DelayMs(3000);
 		WLX_TaskSwitch(Task1Tcb);

@@ -16,6 +16,8 @@ git clone https://github.com/Janey7695/Wanlix_OS.git
 —— “从2个任务切换变成多个任务切换（不可抢占）”-__2020/12/7 21:00__
 * 001.002.002  
 —— “修正bug 使oled正常使用”-__2020/12/7 21:50__
+* 001.003.001
+—— “添加usart通信发送功能”-__2020/12/9 20:50__
 
 ## OS_API 重要操作系统API
 ### 1. `W_TCB* WLX_TaskCreate(VFUNC vfuncPointer,U8* pucTaskStack,U32 uiStackSize)`
