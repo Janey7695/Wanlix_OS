@@ -69,3 +69,5 @@ git clone https://github.com/Janey7695/Wanlix_OS.git
 > Return 返回值
 
 * `U8* SOFTWARE_VER` 返回由字符串构成的版本号的字符串首地址
+
+
