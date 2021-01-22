@@ -18,6 +18,75 @@ git clone https://github.com/Janey7695/Wanlix_OS.git
 —— “修正bug 使oled正常使用”-__2020/12/7 21:50__
 * 001.003.001
 —— “添加usart通信发送功能”-__2020/12/9 20:50__
+* 001.003.002
+—— “添加根任务作为用户程序入口”-__2021/1/22 10:40__
+
+## USAGE 使用
+1. 用户在`Wanlix_usertask.c` 文件下声明创建任务堆栈、定义任务控制块TCB、编写任务函数。
+
+~~~c
+U8 TaskStack[TASKSTACK];    //创建任务堆栈
+W_TCB* TaskTcb;            //创建任务TCB
+
+void Task(void)
+{
+    while(1)
+    {
+        //....编写任务具体程序
+    }
+}
+~~~
+
+2. 在`global.h`内声明变量与函数，使其成为可全局调用
+
+~~~c
+//...
+
+extern U8 TaskStack[TASKSTACK];
+extern W_TCB* TaskTcb;
+extern void Task(void);
+
+//...
+~~~
+
+3. 在`wlx_RootTask.c` 文件中进行任务初始化
+
+~~~c
+void WLX_RootTask(void)
+{
+	DEV_Init();
+	#if OS_OLED_EN
+	OLED_ShowString(0,0,"Wanlix_OS",16);
+	OLED_ShowString(0,2,"Task Init...",8);
+	#endif
+	
+	#if OS_USART_EN
+	printf("\n\r************ Wanlix OS ************\n\r");
+	printf("\n\r*    Version:");
+	printf("%s",WLX_GetWanlixVersion());
+	printf("        *\n\r");
+	printf("\n\r*---------------------------------*\n\r");
+	#endif
+	
+	/*****初始化任务的TCB*****/
+	TaskTcb = WLX_TaskCreate(Task,TaskStack,TASKSTACK);
+	
+	
+	#if OS_OLED_EN
+	OLED_ShowString(0,2,"Task Init OK",8);
+	OLED_ShowString(0,5,"Version:",8);
+	OLED_ShowString(0,6,WLX_GetWanlixVersion(),8);
+	OLED_ShowString(0,3,"Task 1 Run",8);
+	#endif
+	
+	#if OS_USART_EN
+	printf("\n\r>> OS Run\n\r");
+	#endif
+	
+    //切换至任务
+	WLX_TaskSwitch(TaskTcb);
+}
+~~~
 
 ## OS_API 重要操作系统API
 ### 1. `W_TCB* WLX_TaskCreate(VFUNC vfuncPointer,U8* pucTaskStack,U32 uiStackSize)`

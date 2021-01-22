@@ -10,6 +10,7 @@ typedef short               S16;
 typedef int                 S32;
 typedef void                (*VFUNC)(void);
 
+#define ROOTTASKSTACK 512
 
 #ifndef NULL
  #define NULL               ((void*)0)
@@ -49,6 +50,8 @@ extern W_TCB* WLX_TaskCreate(VFUNC vfuncPointer,U8* pucTaskStack,U32 uiStackSize
 extern void WLX_TaskSwitch(W_TCB* pstrTcb);
 extern void WLX_TaskStart(W_TCB* pstrTcb);
 extern U8* WLX_GetWanlixVersion(void);
+extern void WLX_RootTask(void);
+
 #endif
 
 

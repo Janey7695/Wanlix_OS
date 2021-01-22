@@ -1,9 +1,22 @@
 #include "wlx_core_c.h"
 
 
+U8 gaucRootTaskStack[ROOTTASKSTACK];
 
 W_TCB* gpstrCurTcb;                   /* 当前运行任务的TCB指针 */
 
+W_TCB* gpstrRootTaskTcb;
+
+
+
+S32 main(void)
+{
+	gpstrRootTaskTcb = WLX_TaskCreate(WLX_RootTask,gaucRootTaskStack,ROOTTASKSTACK);
+	
+	WLX_TaskStart(gpstrRootTaskTcb);
+	
+	return 0;
+}
 
 /***********************************************************************************
 函数功能: 初始化任务栈函数, 用来创建任务运行前的栈状态.

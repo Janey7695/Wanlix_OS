@@ -15,7 +15,6 @@
 
 #if OS_USART_EN
 #include "usart.h"
-
 #endif
 
 
