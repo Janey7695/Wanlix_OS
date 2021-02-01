@@ -31,8 +31,5 @@
 ..\outfile\wlx_roottask.o: ..\lib\inc\misc.h
 ..\outfile\wlx_roottask.o: ..\wanlix\wanlix.h
 ..\outfile\wlx_roottask.o: ..\srccode\DEVICE\LED\device.h
-..\outfile\wlx_roottask.o: ..\srccode\DEVICE\OLED\oled.h
-..\outfile\wlx_roottask.o: D:\Keil_5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\outfile\wlx_roottask.o: ..\srccode\DEVICE\OLED\draw_api.h
 ..\outfile\wlx_roottask.o: ..\srccode\DEVICE\USART\usart.h
 ..\outfile\wlx_roottask.o: D:\Keil_5\ARM\ARMCC\Bin\..\include\stdio.h

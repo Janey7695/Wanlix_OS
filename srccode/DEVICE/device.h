@@ -3,9 +3,9 @@
 
 #include "stm32f10x.h"
 
-/* ÍâÉè¹¦ÄÜÉèÖÃ */
-#define OS_OLED_EN				1
-#define OS_USART_EN				1
+/* ï¿½ï¿½ï¿½è¹¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+#define OS_OLED_EN				0
+#define OS_USART_EN				0
 
 
 #if OS_OLED_EN
@@ -18,7 +18,7 @@
 #endif
 
 
-/*********ÍâÉè¶Ë¿ÚÖØ¶¨Òå********/
+/*********ï¿½ï¿½ï¿½ï¿½Ë¿ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½********/
 
 
 //LED -> PB5

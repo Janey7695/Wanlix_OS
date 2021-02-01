@@ -34,7 +34,7 @@ void TEST_TestTask2(void)
 		OLED_ShowString(0,3,"Task 2 Run",8);
 		#endif
 		#if OS_USART_EN
-		printf(">> TASK 2 Running\n\r");
+		printf("\n\r >> TASK 2 Running\n\r");
 		#endif
 		DEV_DelayMs(2000);
 		WLX_TaskSwitch(Task3Tcb);

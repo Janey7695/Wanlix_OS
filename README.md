@@ -22,7 +22,8 @@ git clone https://github.com/Janey7695/Wanlix_OS.git
 —— “添加根任务作为用户程序入口”-__2021/1/22 10:40__
 
 ## USAGE 使用
-1. 用户在`Wanlix_usertask.c` 文件下声明创建任务堆栈、定义任务控制块TCB、编写任务函数。
+1. 在`devive.h`中修改宏定义，来决定是否使用一些外设
+2. 用户在`Wanlix_usertask.c` 文件下声明创建任务堆栈、定义任务控制块TCB、编写任务函数。
 
 ~~~c
 U8 TaskStack[TASKSTACK];    //创建任务堆栈
@@ -37,7 +38,7 @@ void Task(void)
 }
 ~~~
 
-2. 在`global.h`内声明变量与函数，使其成为可全局调用
+3. 在`global.h`内声明变量与函数，使其成为可全局调用
 
 ~~~c
 //...
@@ -49,7 +50,7 @@ extern void Task(void);
 //...
 ~~~
 
-3. 在`wlx_RootTask.c` 文件中进行任务初始化
+4. 在`wlx_RootTask.c` 文件中进行任务初始化
 
 ~~~c
 void WLX_RootTask(void)

@@ -34,10 +34,7 @@ I (..\lib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\lib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\lib\inc\misc.h)(0x4D783BB4)
 I (..\wanlix\wanlix.h)(0x600A3977)
-I (..\srccode\DEVICE\LED\device.h)(0x600A3A25)
-I (..\srccode\DEVICE\OLED\oled.h)(0x5FCE1F5D)
-I (D:\Keil_5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-I (..\srccode\DEVICE\OLED\draw_api.h)(0x5FB0AD89)
+I (..\srccode\DEVICE\LED\device.h)(0x600A3E78)
 I (..\srccode\DEVICE\USART\usart.h)(0x5FD0C17D)
 I (D:\Keil_5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 F (..\srccode\global.h)(0x600A3A78)()
@@ -131,10 +128,7 @@ I (..\lib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\lib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\lib\inc\misc.h)(0x4D783BB4)
 I (..\wanlix\wanlix.h)(0x600A3977)
-I (..\srccode\DEVICE\LED\device.h)(0x600A3A25)
-I (..\srccode\DEVICE\OLED\oled.h)(0x5FCE1F5D)
-I (D:\Keil_5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-I (..\srccode\DEVICE\OLED\draw_api.h)(0x5FB0AD89)
+I (..\srccode\DEVICE\LED\device.h)(0x600A3E78)
 I (..\srccode\DEVICE\USART\usart.h)(0x5FD0C17D)
 I (D:\Keil_5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 F (..\srccode\DEVICE\OLED\draw_api.c)(0x5FCE2478)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix -I ..\srccode\DEVICE\LED -I ..\srccode\DEVICE\OLED -I ..\srccode\DEVICE\USART-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\draw_api.o --omf_browse ..\outfile\draw_api.crf --depend ..\outfile\draw_api.d)
@@ -235,7 +229,7 @@ I (..\lib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\lib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\lib\inc\misc.h)(0x4D783BB4)
 I (D:\Keil_5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
-F (..\srccode\Wanlix_usertask.c)(0x600A3A31)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix -I ..\srccode\DEVICE\LED -I ..\srccode\DEVICE\OLED -I ..\srccode\DEVICE\USART-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\wanlix_usertask.o --omf_browse ..\outfile\wanlix_usertask.crf --depend ..\outfile\wanlix_usertask.d)
+F (..\srccode\Wanlix_usertask.c)(0x600A3F62)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix -I ..\srccode\DEVICE\LED -I ..\srccode\DEVICE\OLED -I ..\srccode\DEVICE\USART-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\wanlix_usertask.o --omf_browse ..\outfile\wanlix_usertask.crf --depend ..\outfile\wanlix_usertask.d)
 I (..\srccode\global.h)(0x600A3A78)
 I (..\srccode\stm32f10x.h)(0x4D783CB4)
 I (..\others\core_cm3.h)(0x4D523B58)
@@ -266,10 +260,7 @@ I (..\lib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\lib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\lib\inc\misc.h)(0x4D783BB4)
 I (..\wanlix\wanlix.h)(0x600A3977)
-I (..\srccode\DEVICE\LED\device.h)(0x600A3A25)
-I (..\srccode\DEVICE\OLED\oled.h)(0x5FCE1F5D)
-I (D:\Keil_5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-I (..\srccode\DEVICE\OLED\draw_api.h)(0x5FB0AD89)
+I (..\srccode\DEVICE\LED\device.h)(0x600A3E78)
 I (..\srccode\DEVICE\USART\usart.h)(0x5FD0C17D)
 I (D:\Keil_5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 F (..\srccode\wlx_RootTask.c)(0x600A3A51)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix -I ..\srccode\DEVICE\LED -I ..\srccode\DEVICE\OLED -I ..\srccode\DEVICE\USART-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\wlx_roottask.o --omf_browse ..\outfile\wlx_roottask.crf --depend ..\outfile\wlx_roottask.d)
@@ -303,10 +294,7 @@ I (..\lib\inc\stm32f10x_usart.h)(0x4D783BB4)
 I (..\lib\inc\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\lib\inc\misc.h)(0x4D783BB4)
 I (..\wanlix\wanlix.h)(0x600A3977)
-I (..\srccode\DEVICE\LED\device.h)(0x600A3A25)
-I (..\srccode\DEVICE\OLED\oled.h)(0x5FCE1F5D)
-I (D:\Keil_5\ARM\ARMCC\include\stdlib.h)(0x574E3E26)
-I (..\srccode\DEVICE\OLED\draw_api.h)(0x5FB0AD89)
+I (..\srccode\DEVICE\LED\device.h)(0x600A3E78)
 I (..\srccode\DEVICE\USART\usart.h)(0x5FD0C17D)
 I (D:\Keil_5\ARM\ARMCC\include\stdio.h)(0x574E3E26)
 F (..\others\core_cm3.c)(0x4C0C587E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\lib\inc -I ..\others -I ..\srccode -I ..\wanlix -I ..\srccode\DEVICE\LED -I ..\srccode\DEVICE\OLED -I ..\srccode\DEVICE\USART-ID:\IoT_Engineering_19\学业文档\课外学习\STM32\Wanlix_OS\project\RTE-ID:\Keil_5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-ID:\Keil_5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_MD -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o ..\outfile\core_cm3.o --omf_browse ..\outfile\core_cm3.crf --depend ..\outfile\core_cm3.d)

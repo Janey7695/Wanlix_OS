@@ -405,11 +405,6 @@
               <FilePath>..\srccode\global.h</FilePath>
             </File>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\srccode\main.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f10x_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\srccode\stm32f10x_it.c</FilePath>
@@ -438,6 +433,16 @@
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\srccode\DEVICE\USART\usart.c</FilePath>
+            </File>
+            <File>
+              <FileName>Wanlix_usertask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\srccode\Wanlix_usertask.c</FilePath>
+            </File>
+            <File>
+              <FileName>wlx_RootTask.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\srccode\wlx_RootTask.c</FilePath>
             </File>
           </Files>
         </Group>

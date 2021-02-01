@@ -32,8 +32,5 @@
 ..\outfile\wlx_core_c.o: ..\lib\inc\misc.h
 ..\outfile\wlx_core_c.o: ..\wanlix\wanlix.h
 ..\outfile\wlx_core_c.o: ..\srccode\DEVICE\LED\device.h
-..\outfile\wlx_core_c.o: ..\srccode\DEVICE\OLED\oled.h
-..\outfile\wlx_core_c.o: D:\Keil_5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\outfile\wlx_core_c.o: ..\srccode\DEVICE\OLED\draw_api.h
 ..\outfile\wlx_core_c.o: ..\srccode\DEVICE\USART\usart.h
 ..\outfile\wlx_core_c.o: D:\Keil_5\ARM\ARMCC\Bin\..\include\stdio.h

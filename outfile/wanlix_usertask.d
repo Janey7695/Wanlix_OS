@@ -31,8 +31,5 @@
 ..\outfile\wanlix_usertask.o: ..\lib\inc\misc.h
 ..\outfile\wanlix_usertask.o: ..\wanlix\wanlix.h
 ..\outfile\wanlix_usertask.o: ..\srccode\DEVICE\LED\device.h
-..\outfile\wanlix_usertask.o: ..\srccode\DEVICE\OLED\oled.h
-..\outfile\wanlix_usertask.o: D:\Keil_5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\outfile\wanlix_usertask.o: ..\srccode\DEVICE\OLED\draw_api.h
 ..\outfile\wanlix_usertask.o: ..\srccode\DEVICE\USART\usart.h
 ..\outfile\wanlix_usertask.o: D:\Keil_5\ARM\ARMCC\Bin\..\include\stdio.h
